@@ -1,5 +1,5 @@
 # MPICH Visualisation
-![](./Image.png)
+![](./images/Image.png)
 ## Introduction 
 MPICH is a standard software used for message-passing for distributed-memory 
 applications used in parallel computing. MPICH is Free and open source software. 
@@ -18,6 +18,25 @@ are interacting among themselves for different functions
 specific function 
 * Gallery to show the snapshots 
 * Generate animated gif for a configuration 
+## Physical Topologies Implemented :
+|Topology|About|Image|
+|---|---|---|
+|Fat Tree |Nodes are arranged as nodes of a Binary Tree, with more links in upper levels than lower |![](./images/fattree.png)|
+|Torus|Torus is a mesh connection with extra links connecting the boundary nodes |![](./images/torus.png)|
+|Dragonfly|Nodes are grouped and arranged in a circular manner|![](./images/dragonfly.png)|
+## MPICH Functions Included :
+* MPI_Send ( ) :
+* MPI_Bcast ( ) :
+    * Naive Algorithm
+    * Binomial Tree
+* MPI_Reduce ( ) :
+* MPI_Allreduce ( ) :
+    * Rabenseifner Algorithm
+* MPI_Gather ( ) :
+    * Recursive Doubling
+* MPI_Allgather ( ) :
+    * Recursive doubling Naive Algorithm
+    * Rabenseifner Algorithm Recursive Doubling
 ---
 
 ## Dependencies
@@ -62,10 +81,10 @@ python3 main.py
 ```
 ---
 ## Screenshots
-![](./Screenshot1.png)
-![](./Screenshot2.png)
-![](./Screenshot3.png)
-![](./Screenshot4.png)
-![](./Screenshot5.png)
-![](./Screenshot6.png)
+![](./images/Screenshot1.png)
+![](./images/Screenshot2.png)
+![](./images/Screenshot3.png)
+![](./images/Screenshot4.png)
+![](./images/Screenshot5.png)
+![](./images/Screenshot6.png)
 ---
